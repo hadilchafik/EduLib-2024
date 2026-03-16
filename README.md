@@ -1,29 +1,56 @@
-# EduLib
-Final Project for CSC3323:  digital library management system that makes it easier for students to access academic materials
+EduLib
+EduLib is a digital library management system developed as the final project for CSC3323 – Software Engineering at Al Akhawayn University.
+The platform allows students to easily access and manage academic resources through a web interface.
+Features
+User authentication (Student and Admin roles)
+Book catalog and genre management
+Book borrowing and checkout history tracking
+Integrated chatbot using GPT4All and LLaMA 3
+Technologies Used
+Python
+Flask
+SQLite
+HTML, CSS, JavaScript
+Running the Project
+Install GPT4All from:
+https://www.nomic.ai/gpt4all
+Download and install the LLaMA 3 model inside GPT4All.
 
-All users are first directed to a Log in. After logging in as a Student or Admin member, they will have different ways to use the site. 
+Run the application:
+python app.py 
+
+Project Structure
+instance/
+    contains the SQLite database file
+
+static/
+    css/        -> page styling (styles.css)
+    js/         -> JavaScript for chatbot and interactivity
+    photos/     -> images used in the interface
+
+templates/
+    admin/      -> HTML pages for admin users
+    non_admin/  -> HTML pages for student users
+    signup.html
+    index.html  -> login page
+
+app.py
+    backend application logic
 
 
+Database Models
+The system uses SQLite with the following models:
+User
+Book
+Genre
+Role
+BookGenre
+UserRole
+BookCheckoutHistory
 
-To run the chat bot you need to install https://www.nomic.ai/gpt4all, run this and then install llama 3
 
-to run the program enter python app.py on the terminal
-
- #Folders
-    instance folder keeps the database file
-    static folder holds:
-        the css folder (styles.css was the main file used for our pages design)
-        js folder holds the javascript files for the bot and the pages that used it for more interactivity
-        photos folder holds the pictures we used
-    templates folder holds:
-        admin folder for html files for the admin pages
-        non admin folder for html files for the non admin pages
-        signup html 
-        index html for the login
-    the app.py is where our backend logic is.
-
-database models for sqlite:
-    User, Book, BookGenre, Userrole,Role,Genre, Bookcheckouthistory (to keep track of the borrowed books)
+Notes
+This project was developed as part of a Software Engineering course at Al Akhawayn University in collaboration with a team of students.
 
     
 
