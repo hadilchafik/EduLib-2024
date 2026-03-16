@@ -1,5 +1,8 @@
-EduLib
+#EduLib
+
+
 EduLib is a digital library management system developed as the final project for CSC3323 – Software Engineering at Al Akhawayn University.
+
 The platform allows students to easily access and manage academic resources through a web interface.
 Features
 User authentication (Student and Admin roles)
@@ -16,10 +19,10 @@ Install GPT4All from:
 https://www.nomic.ai/gpt4all
 Download and install the LLaMA 3 model inside GPT4All.
 
-Run the application:
+#Run the application:
 python app.py 
 
-Project Structure
+#Project Structure
 instance/
     contains the SQLite database file
 
@@ -38,7 +41,7 @@ app.py
     backend application logic
 
 
-Database Models
+#Database Models
 The system uses SQLite with the following models:
 User
 Book
@@ -49,7 +52,7 @@ UserRole
 BookCheckoutHistory
 
 
-Notes
+#Notes
 This project was developed as part of a Software Engineering course at Al Akhawayn University in collaboration with a team of students.
 
     
